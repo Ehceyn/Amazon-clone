@@ -1,71 +1,96 @@
 @import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
-#header{
-    background-color: #131921;
-    display:flex;
-    align-items: center;
-    position:sticky;
-    top:0;
-    z-index:100;
+#header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.header-logo{
-    width: 100px;
-    margin:0 20px;
-    margin-top: 18px;
-    object-fit: contain;
+.header-logo {
+  width: 100px;
+  margin: 0 20px;
+  margin-top: 18px;
+  object-fit: contain;
 }
 
-.header-search{
-    display:flex;
-    /* align-items: center; */
-    flex: 1;
+.header-search {
+  display: flex;
+  /* align-items: center; */
+  flex: 1;
 }
 
-.header-searchInput{
-    height: 12px;
-    padding: 10px;
-    border: none;
-    width: 100%;
+.header-searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
 }
 
-.header-searchIcon{
-    background-color: #cd9042;
-    height:22px !important;
-    padding: 5px;
+.header-searchIcon {
+  background-color: #cd9042;
+  height: 22px;
+  padding: 5px;
 }
 
-.header-nav{
- display: flex;
- justify-content: space-evenly;
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-.header-option{
+.header-option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.header-optionLineOne {
+  font-size: 0.6em;
+}
+
+.header-optionLineTwo {
+  font-size: 0.4em;
+  font-weight: 800;
+}
+
+.header-optionBasket {
+  display: flex;
+  align-items: center;
+}
+
+.header-basketCount {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+@media screen and (max-width: 428px) {
+  .header-logo {
+    width: 50px;
+    margin: 0 10px;
+    margin-top: 18px;
+    object-fit: contain;
+  }
+  .header-searchInput {
+    height: 8px;
+    padding: 6px;
+    border: none;
+    width: 100%;
+  }
+  .header-searchIcon {
+    background-color: #cd9042;
+    height: 10px;
+    padding: 1px;
+    font-size: 1px;
+  }
+  .header-nav {
     display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.header-optionLineOne{
-    font-size: 10px;
-}
-
-.header-optionLineTwo{
-    font-size: 13px;
-    font-weight: 800;
-}
-
-.header-optionBasket{
-    display: flex;
-    align-items: center;
-}
-
-.header-basketCount{
-    margin-left: 10px;
-    margin-right: 10px; 
+    justify-content: space-evenly;
+  }
 }
