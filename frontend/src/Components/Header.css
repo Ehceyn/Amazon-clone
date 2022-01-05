@@ -1,6 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
 #header {
   background-color: #131921;
+  height: 66.2px;
   display: flex;
   align-items: center;
   position: sticky;
@@ -8,10 +9,15 @@
   z-index: 100;
 }
 
+#header > a {
+  display: flex;
+  align-items: center;
+  height: 66.2px;
+}
+
 .header-logo {
   width: 100px;
   margin: 0 20px;
-  margin-top: 18px;
   object-fit: contain;
 }
 
@@ -22,7 +28,7 @@
 }
 
 .header-searchInput {
-  height: 12px;
+  height: 14px;
   padding: 10px;
   border: none;
   width: 100%;
@@ -37,6 +43,7 @@
 .header-nav {
   display: flex;
   justify-content: space-evenly;
+  margin: 0 20px 0 0;
 }
 
 .header-link {
@@ -47,16 +54,16 @@
 .header-option {
   display: flex;
   flex-direction: column;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .header-optionLineOne {
-  font-size: 0.6em;
+  font-size: 0.75em;
 }
 
 .header-optionLineTwo {
-  font-size: 0.4em;
+  font-size: 0.875em;
   font-weight: 800;
 }
 
@@ -70,27 +77,37 @@
   margin-right: 3px;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 545px) {
+  #header {
+    height: 36.2px;
+  }
+
+  #header > a {
+    height: 36.2px;
+  }
+
   .header-logo {
     width: 50px;
     margin: 0 10px;
-    margin-top: 18px;
-    object-fit: contain;
   }
   .header-searchInput {
     height: 8px;
     padding: 6px;
-    border: none;
-    width: 100%;
   }
-  .header-searchIcon {
-    background-color: #cd9042;
-    height: 10px;
-    padding: 1px;
-    font-size: 1px;
-  }
+
   .header-nav {
-    display: flex;
-    justify-content: space-evenly;
+    margin: 0 8px 0 0;
+  }
+
+  .header-option {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .header-optionLineOne {
+    font-size: 0.4em;
+  }
+
+  .header-optionLineTwo {
+    font-size: 0.525em;
   }
 }

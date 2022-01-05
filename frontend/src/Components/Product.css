@@ -5,10 +5,10 @@
   min-width: 100px;
   background-color: #fff;
   margin: 10px;
-  z-index: 1;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 20px;
+  z-index: 1;
   width: 100%;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .product-info {
-  height: 100px;
+  height: fit-content;
   margin-bottom: 15px;
 }
 

@@ -17,7 +17,7 @@
   margin-bottom: -150px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 545px) {
   .home-row {
     flex-wrap: wrap;
   }
